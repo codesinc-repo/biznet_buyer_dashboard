@@ -1,0 +1,44 @@
+.parent-user-offer{
+
+ 
+    /* Custom Styles */
+    .offer-placeholder {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: fit-content;
+      text-align: center;
+    }
+    .container-user-offer{
+      margin-top: 100px !important;
+    }
+
+    .offer-placeholder img {
+      width: 150px;
+      height: auto;
+      margin-bottom: 20px;
+    }
+
+    .offer-placeholder h5 {
+      font-size: 25px;
+      font-weight: 300;
+      margin-bottom: 10px;
+    }
+
+    .offer-placeholder p {
+      color: #6c757d;
+      font-size: 1rem;
+      margin-bottom: 20px;
+    }
+
+    .offer-placeholder a {
+      color: #007bff;
+      font-weight: 400;
+      text-decoration: none;
+    }
+
+    .offer-placeholder a:hover {
+      text-decoration: underline;
+    }
+}

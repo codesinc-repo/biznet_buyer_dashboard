@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Agent </title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div id="headerPlaceholder"></div>
+
+   
+        <div class="Home-parent ">
+            <div id="main-content">
+       
+    <div class="container mt-5 text-center container-open-house">
+                <img src="assets/images/Home copy.png" alt="" height="150px" width="auto">
+                <h3>You have no upcoming open houses</h3>
+                <p>Add homes to your open house schedule to help you plan out your home search.</p>
+                <div class="row justify-content-center mt-2">
+                    <div class="col-md-5">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search for more" aria-label="Search">
+                            <button type="button" class="btn btn-danger"><i
+                                    class="fa-solid fa-magnifying-glass"></i></button>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+  
+    <footer>
+        <!-- place footer here -->
+    </footer>
+    <script>
+        // Load the header from the external file
+        fetch('user-header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('headerPlaceholder').innerHTML = data;
+            });
+      </script>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+.parent-user-appoinment{
+
+  
+    .no-appointments-section {
+        background-color: #f7f7f7; /* Light background */
+        padding: 20px;
+        border-radius: 8px;
+    }
+    .appoinment-container{
+        margin-top: 100px !important;
+    }
+
+    .card {
+        border-radius: 10px;
+        padding: 20px;
+        border: 1px solid #e3e3e3;
+    }
+
+    .agent-image {
+        width: 80px;
+        height: 80px;
+    }
+
+    .agent-info {
+        font-size: 0.95rem;
+    }
+
+    .btn-dark {
+        padding: 10px 20px;
+        font-size: 0.95rem;
+        font-weight: 600;
+    }
+
+    /* Adjustments for smaller screens */
+    @media (max-width: 768px) {
+        .no-appointments-section {
+            text-align: center;
+            display: flex;
+
+flex-direction: column; }
+.div-img-text{
+    display: flex;
+    flex-direction: column;
+}
+.text-center img{
+    width: 30% !important;
+}
+
+        .btn-dark {
+            width: 100%;
+        }
+    }
+}

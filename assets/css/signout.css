@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.sign-up-parent{
+
+
+body {
+    background-image: url('https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1950&q=80');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+.container {
+    max-width: 500px; /* Increased width */
+    margin-top: 80px; /* Adjust margin */
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+    border-radius: 10px; /* Rounded corners */
+    padding: 40px; /* Increased padding */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for better look */
+}
+.btn-social {
+    margin-bottom: 15px; /* Increased margin for buttons */
+    padding: 12px;
+    font-weight: 500;
+}
+.form-container h3 {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+.form-container p {
+    font-size: 1rem;
+}
+.form-label {
+    font-weight: 600;
+}
+.btn-danger {
+    background-color: #d9534f; /* Red button */
+    border: none;
+}
+.btn-danger:hover {
+    background-color: #c9302c;
+}
+
+.google{
+    font-size: 30px;
+}}

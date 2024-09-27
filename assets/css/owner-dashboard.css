@@ -1,0 +1,30 @@
+.odbtn-color{
+    background-color: #0c2640;
+
+}
+.odhadding{
+    margin-top: 80px;
+}
+.odsearch-icon{
+    left: 490px;
+    color: #0c2640;
+    font-size: large;
+    
+}
+.odborder{
+    border-bottom: solid;
+    border-width: 1px;
+    border-color: #dee2e6;
+    
+}
+@media screen and (max-width:576px) {
+    .odbtn-color{
+        width: 100%;
+    }
+    .odsearch-icon{
+        left: 310px;
+    }
+    .odborder{
+        border-bottom: none;
+    }
+}

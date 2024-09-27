@@ -1,0 +1,227 @@
+.parent-user-setting{
+
+      
+    .custom-switch {
+        position: relative;
+        display: inline-block;
+        width: 60px;
+        height: 24px;
+        border: 1px solid black;
+        border-radius: 12px;
+    }
+    .container-user-setting{
+        margin-top: 100px !important;
+    }
+
+    .custom-switch input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+
+    .custom-slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ccc;
+        transition: background-color 0.4s;
+        border-radius: 34px;
+    }
+
+    .custom-slider:before {
+        position: absolute;
+        content: "";
+        height: 18px;
+        width: 18px;
+        left: 3px;
+        bottom: 3px;
+        background-color: white;
+        transition: transform 0.4s;
+        border-radius: 50%;
+    }
+
+    input:checked + .custom-slider {
+        background-color: #20c997;
+    }
+
+    input:checked + .custom-slider:before {
+        transform: translateX(36px); /* Moves the dot to the right */
+    }
+
+    /* On and Off Labels */
+    .custom-slider .slider-label {
+        position: absolute;
+        font-size: 10px;
+        font-weight: bold;
+        top: 4px;
+        transition: opacity 0.4s;
+    }
+
+    .custom-slider .on-label {
+        left: 8px;
+        color: white;
+        opacity: 0; /* Initially hidden */
+    }
+
+    .custom-slider .off-label {
+        right: 8px;
+        color: white;
+        opacity: 1; /* Initially visible */
+    }
+
+    input:checked + .custom-slider .on-label {
+        opacity: 1; /* Show "ON" when checked */
+    }
+
+    input:checked + .custom-slider .off-label {
+        opacity: 0; /* Hide "OFF" when checked */
+    }
+
+    input:not(:checked) + .custom-slider .on-label {
+        opacity: 0; /* Hide "ON" when unchecked */
+    }
+
+    input:not(:checked) + .custom-slider .off-label {
+        opacity: 1; /* Show "OFF" when unchecked */
+    }
+
+    .edit-section {
+        text-decoration: none;
+        color: #15727a;
+        font-weight: bold;
+    }
+
+    .edit-section:hover {
+        text-decoration: underline;
+    }
+
+    /* Custom Alert Styles */
+    .custom-alert {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); /* Center the alert */
+        width: 300px;
+        z-index: 1000;
+        background-color: #f8d7da; /* Light red background */
+        color: #721c24; /* Dark red text */
+        padding: 15px;
+        border: 1px solid #f5c6cb; /* Light red border */
+        border-radius: 5px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        transition: opacity 0.5s ease-in-out; /* Smooth transition */
+        opacity: 0; /* Start invisible */
+    }
+
+    .custom-alert.show {
+        opacity: 1; /* Show when needed */
+    }
+
+    .saved-change {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .radio-class {
+        width: 20px !important;
+    }
+    
+    .saved-search-card {
+        border: none;
+        border-radius: 12px;
+        padding: 24px;
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.08);
+        background-color: #fff;
+        transition: box-shadow 0.3s ease;
+    }
+
+    .saved-search-card:hover {
+        box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.12);
+    }
+
+    .icon-container {
+        background-color: #f7f7f7;
+        border-radius: 50%;
+        padding: 12px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 15px;
+    }
+
+    .icon-container i {
+        font-size: 24px;
+        color: #6c757d;
+    }
+
+    .text-muted {
+        font-size: 14px;
+    }
+
+    .card-image img {
+        width: 80px;
+        height: auto;
+    }
+
+    .section-title {
+        font-weight: 700;
+    }
+
+    .section-subtitle {
+        color: #6c757d;
+    }
+    .email-preference-card {
+        border: none;
+        border-radius: 12px;
+        padding: 20px;
+        box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
+        margin-bottom: 16px;
+    }
+
+    .toggle {
+        display: flex;
+        align-items: center;
+    }
+
+    .toggle-switch {
+        display: inline-flex;
+        width: 45px;
+        height: 24px;
+        background-color: #38a1a2;
+        border-radius: 24px;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        font-weight: bold;
+        cursor: pointer;
+        user-select: none;
+    }
+
+    .toggle-switch .toggle-circle {
+        width: 18px;
+        height: 18px;
+        background-color: #fff;
+        border-radius: 50%;
+        position: absolute;
+        right: 5px;
+    }
+
+    .text-muted {
+        font-size: 14px;
+    }
+
+    .preference-title {
+        font-weight: 500;
+    }
+
+    .preference-section-title {
+        font-weight: 700;
+    }
+}

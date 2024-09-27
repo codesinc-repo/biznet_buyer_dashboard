@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biznet Real Estate - Owner Dashboard</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+
+<body>
+  <div id="headerPlaceholder"></div>
+ 
+  <!-- header  -->
+
+
+
+
+  <div class="owner-dashboaed-parent ">
+    <div id="main-content">
+       
+       
+   
+    <!-- ==========Nav tab============= -->
+    <section>
+      <ul class="nav nav-tabs justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">My Properties</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-dark" data-bs-toggle="dropdown" href="#" role="button"
+            aria-expanded="false">Selling Options</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Why Sell with Biznet</a></li>
+            <li><a class="dropdown-item" href="#">Full-Service Selling</a></li>
+            <li><a class="dropdown-item" href="#">Find an Agent</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-dark" data-bs-toggle="dropdown" href="#" role="button"
+            aria-expanded="false">Resources</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Home Selling Guide</a></li>
+            <li><a class="dropdown-item" href="#">Should I Sell?</a></li>
+            <li><a class="dropdown-item" href="#">Recommended Contractors</a></li>
+            <li><a class="dropdown-item" href="#">Market Trends</a></li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+    <!-- ==========home start============= -->
+    <section>
+      <div class="container">
+        <div class="row">
+          <h1 class="text-center odhadding pb-3">Owner Dashboard</h1>
+          <div class="col-12 col-md-8 col-lg-8 px-4">
+            <h3>What’s Your Property Worth?</h3>
+            <p class="pt-4">Claim your property to monitor its value and see how many buyers are looking for homes like
+              yours with Biznet Real Estate.</p>
+          </div>
+          <div class="col-12 col-md-6 col-lg-6 px-4 pb-3 odborder">
+            <label for="formGroupExampleInput" class="form-label">Property Address</label>
+
+            <div class="d-flex border-0 bg-transparent align-items-center position-relative w-100">
+              <input type="text" class="form-control py-2" id="formGroupExampleInput" placeholder="Enter your property address">
+              <span class="pt-2 position-absolute odsearch-icon bg-transparent"><i class="fa-solid fa-circle-xmark"></i></span>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-6 mt-2 px-4 border-bottom pb-3">
+            <div class="ms-0">
+              <button type="button" class="px-5 fw-bold odbtn-color py-2 mt-4 border-0 text-white">Claim Your Property</button>
+            </div>
+          </div>
+          <div class="col-12 col-md-12 col-lg-12">
+            <h3 class="pt-5">Marketing Your Property</h3>
+            <p class="pt-3">Get the best results with Biznet’s professional marketing services. <a class="text-decoration-none" href="#">Learn more about our marketing solutions</a>.</p>
+          </div>
+          <div class="col-6 col-md-3 col-lg-3">
+            <p class="mb-0">Professional Photos</p>
+            <img class="w-100" src="/assets/images/Owner-Dashboard/photography.jpg" alt="Professional Photos">
+          </div>
+          <div class="col-6 col-md-3 col-lg-3">
+            <p class="mb-0">Yard Sign</p>
+            <img class="w-100" src="/assets/images/Owner-Dashboard/sign.jpg" alt="Yard Sign">
+          </div>
+          <div class="col-6 col-md-3 col-lg-3">
+            <p class="mb-0">Brochure Flyers</p>
+            <img class="w-100" src="/assets/images/Owner-Dashboard/flyers.jpg" alt="Brochure Flyers">
+          </div>
+          <div class="col-6 col-md-3 col-lg-3">
+            <p class="mb-0">MLS Listing</p>
+            <img class="w-100" src="/assets/images/Owner-Dashboard/home-active.jpg" alt="MLS Listing">
+          </div>
+          <a class="py-4" href="#">Show more</a>
+        </div>
+      </div>
+    </section>
+  </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script>
+    // Load the header from the external file
+    fetch('user-header.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('headerPlaceholder').innerHTML = data;
+      });
+  </script>
+
+</body>
+
+</html>
